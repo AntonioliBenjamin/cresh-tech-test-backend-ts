@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ git clone ********
+$ git clone https://github.com/AntonioliBenjamin/cresh-tech-test-backend-ts.git
 $ cd cresh-tech-test-backend-ts
 $ npm install
 ```
@@ -45,7 +45,7 @@ First, create an **.env** file at the root of the project and create two environ
 
 >    //.env file example
 >    
->     MONGODB_URI=mongodb://127.0.0.1:27017/cresh
+>     MONGODB_URL=mongodb://127.0.0.1:27017/cresh
 >     PORT=3000
 
     
