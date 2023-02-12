@@ -15,7 +15,7 @@ $ npm start
  ## Test
 
 ```bash
-$ npm run test
+$ npm test
 ```
 
 ## Architecture
