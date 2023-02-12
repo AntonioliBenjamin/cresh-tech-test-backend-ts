@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ git clone https://github.com/AntonioliBenjamin/cresh-tech-test-backend-ts.git
+$ git clone ********
 $ cd cresh-tech-test-backend-ts
 $ npm install
 ```
@@ -15,7 +15,7 @@ $ npm start
  ## Test
 
 ```bash
-$ npm test
+$ npm run test
 ```
 
 ## Architecture
@@ -32,37 +32,97 @@ Three major layers:
 
 ## Connection
 
-Create an **.env** file at the root of the project and create two environment variables:
+First, create an **.env** file at the root of the project and create two environment variables:
 
  1. **MONGODB_URL**
     
  2. **PORT**
 
+  
+
+
+ 
+
 >    //.env file example
 >    
 >     MONGODB_URI=mongodb://127.0.0.1:27017/cresh
 >     PORT=3000
-  
+
+    
+    
 
 ## API
-You will find seven API endpoints:
+  
+All endpoints return standardized entities,  you will find seven API points:
 
-**customers:**
- - POST  /customers
- - GET  /customers/all
- - GET  /customers/transactions/:customerId
+## **Customers:**
 
-**transactions:**
- - POST  /transactions
- - GET  /transactions/instalments/:transactionId
- - PATCH  /transactions/instalments/:instalmentId
+ **- POST - /customers**
+ 
 
-**status:**
- - GET  /status
+>   Creation of a new customer
+
+>    *body example:*
+>    
+>      {
+>             "firstname": "John",
+>             "lastname": "Doe",
+>             "birthdate": "15/05/1992"
+>      }
+
+ 
+
+**- GET - /customers/all**
+
+
+> List of all the customers
+
+ **- GET - /customers/transactions/:customerId**
+ 
+
+>    List of all the transactions related to a given customer
+
+## **Transactions:**
+
+ **- POST - /transactions**
+
+ 
+
+> Create a transaction
+
+
+>*body example:*
+
+
+>      { 
+>        ammout: 1000.87, 
+>        customer_id: "12345", 
+>         is_online: true,
+>         split: 4,
+>         store_name: "The Store"
+>      }
+
+ **- GET - transactions/instalments/:transactionId**
+
+>    List of all the instalments related to a given transaction
+
+ **- PATCH - transactions/instalments/:instalmentId**
+ 
+
+>    Trigger a payment of a specific transaction's instalment
+
+## **Status:**
+
+**- GET - /status**
+
+> server and db healthcheck 
+
+  
 
 ## Test
   
 All the layers of the program are tested with Jest, you will find the **unit tests** on the core part, **integration tests** on the adapters part and the **end to end tests** on the app part.  The program has a coverage rate of 100%
+
 
 ## Conclusion
 
