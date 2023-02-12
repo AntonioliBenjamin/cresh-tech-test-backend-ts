@@ -58,7 +58,7 @@ You will find seven API endpoints:
  - PATCH - transactions/instalments/:instalmentId
 
 **status:**
-GET - /status
+ - GET - /status
 
 ## Test
   
