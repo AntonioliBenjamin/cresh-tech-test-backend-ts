@@ -48,17 +48,17 @@ First, create an **.env** file at the root of the project and create two environ
 You will find seven API endpoints:
 
 **customers:**
- - POST - /customers
- - GET - /customers/all
- - GET - /customers/transactions/:customerId
+ - POST  /customers
+ - GET  /customers/all
+ - GET  /customers/transactions/:customerId
 
 **transactions:**
- - POST - /transactions
- - GET - transactions/instalments/:transactionId
- - PATCH - transactions/instalments/:instalmentId
+ - POST  /transactions
+ - GET  transactions/instalments/:transactionId
+ - PATCH  /transactions/instalments/:instalmentId
 
 **status:**
- - GET - /status
+ - GET  /status
 
 ## Test
   
