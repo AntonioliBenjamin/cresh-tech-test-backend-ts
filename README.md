@@ -32,7 +32,7 @@ Three major layers:
 
 ## Connection
 
-First, create an **.env** file at the root of the project and create two environment variables:
+Create an **.env** file at the root of the project and create two environment variables:
 
  1. **MONGODB_URL**
     
