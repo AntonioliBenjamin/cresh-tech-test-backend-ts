@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ git clone https://github.com/AntonioliBenjamin/cresh-tech-test-backend-ts.git
+$ git clone ********
 $ cd cresh-tech-test-backend-ts
 $ npm install
 ```
@@ -81,6 +81,7 @@ All endpoints return standardized entities,  you will find seven API points:
  
 
 >    List of all the transactions related to a given customer
+>    example :   /customers/transactions/12345
 
 ## **Transactions:**
 
@@ -102,14 +103,16 @@ All endpoints return standardized entities,  you will find seven API points:
 >         store_name: "The Store"
 >      }
 
- **- GET - transactions/instalments/:transactionId**
+ **- GET - /transactions/instalments/:transactionId**
 
 >    List of all the instalments related to a given transaction
+>    example : /transactions/instalments/12345
 
- **- PATCH - transactions/instalments/:instalmentId**
+ **- PATCH - /transactions/instalments/:instalmentId**
  
 
 >    Trigger a payment of a specific transaction's instalment
+>    example : /transactions/instalments/12345
 
 ## **Status:**
 
