@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ git clone ********
+$ git clone https://github.com/AntonioliBenjamin/cresh-tech-test-backend-ts.git
 $ cd cresh-tech-test-backend-ts
 $ npm install
 ```
