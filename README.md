@@ -81,6 +81,7 @@ All endpoints return standardized entities,  you will find seven API points:
  
 
 >    List of all the transactions related to a given customer
+>    
 >    example :   /customers/transactions/12345
 
 ## **Transactions:**
@@ -106,12 +107,14 @@ All endpoints return standardized entities,  you will find seven API points:
  **- GET - /transactions/instalments/:transactionId**
 
 >    List of all the instalments related to a given transaction
+>    
 >    example : /transactions/instalments/12345
 
  **- PATCH - /transactions/instalments/:instalmentId**
  
 
 >    Trigger a payment of a specific transaction's instalment
+>    
 >    example : /transactions/instalments/12345
 
 ## **Status:**
