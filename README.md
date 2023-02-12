@@ -54,7 +54,7 @@ You will find seven API endpoints:
 
 **transactions:**
  - POST  /transactions
- - GET  transactions/instalments/:transactionId
+ - GET  /transactions/instalments/:transactionId
  - PATCH  /transactions/instalments/:instalmentId
 
 **status:**
