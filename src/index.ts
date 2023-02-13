@@ -36,15 +36,6 @@ useExpressServer(app, {
   ]
 })
 
-app.use((err, res, next) => {
-  if (res.headersSent) {
-      console.error(err)
-      return next(err)
-  }
-  console.error(err)
-  res.status(400).send(err)
-});
-
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
 });
